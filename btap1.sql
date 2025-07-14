@@ -1,1 +1,0 @@
-SELECT * FROM bt1.teacher;
