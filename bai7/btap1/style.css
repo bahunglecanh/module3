@@ -1,0 +1,42 @@
+.header{
+    text-align: center;
+    border:1px solid black;
+    border-radius: 6px;
+    padding: 10px ;
+    margin-bottom: 10px;
+}
+.nav{
+    text-align: center;
+    border:1px solid black;
+    border-radius: 6px;
+    padding: 10px ;
+    margin-bottom: 10px;
+}
+.center{
+    display: flex;
+    justify-content: space-around;
+
+}
+.section{
+    text-align: center;
+    border:1px solid black;
+    border-radius: 6px;
+    padding: 100px 30px;
+    margin-bottom: 10px;
+    width: 800px;
+}
+.aside{
+    text-align: center;
+    border:1px solid black;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 500px;
+    padding: 200px 2px;
+}
+.footer{
+    text-align: center;
+    border:1px solid black;
+    border-radius: 6px;
+    padding: 10px ;
+    margin-bottom: 10px;
+}
