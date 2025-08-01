@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px 80px;
+}
+.logo img{
+    height: 90px;
+    width: 200px;
+}
+.logo{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 70px;
+    margin-left: 300px;
+}
+.nav ul li{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.nav ul li a{
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.row{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.card {
+    padding: 10px 20px;
+}
+.card img {
+    height: 200px;
+    width: 350px;
+}
+
+.center img {
+    height: 400px;
+    width: 800px;
+}
+
+
+.text p{
+    padding: 10px;
+    font-size: 18px;
+}
+footer{
+    text-align: center;
+    margin-left: 40px;
+    padding: 40px;
+    background-color: antiquewhite;
+}
+
+@media (min-width: 1241px) {
+    .col-l-1 {width: 8.333%;}
+    .col-l-2 {width: 16.666%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.333%;}
+    .col-l-5 {width: 41.666%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.333%;}
+    .col-l-8 {width: 66.666%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.333%;}
+    .col-l-11 {width: 91.666%;}
+    .col-l-12 {width: 100%;}
+    .footer {
+        display: block;
+    }
+}
