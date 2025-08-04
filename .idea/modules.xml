@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CodeGym_module3.iml" filepath="$PROJECT_DIR$/.idea/CodeGym_module3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bai8.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bai8.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bai8.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bai8.test.iml" />
     </modules>
   </component>
 </project>

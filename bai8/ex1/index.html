@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .gallery {
+      margin: 20px;
+    }
+    .gallery h1 {
+      text-align: center;
+    }
+    .gallery p {
+      text-align: center;
+      font-style: italic;
+    }
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .image-item {
+      flex: 1 1 200px;
+      max-width: 300px;
+      text-align: center;
+    }
+    .image-item img {
+      width: 100%;
+      height: auto;
+    }
+    .image-item p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    @media screen and (max-width: 700px) {
+      .image-item {
+        flex: 1 1 100%;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .image-item {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+<div class="gallery">
+  <h1>Responsive Image Gallery</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <div class="image-container">
+    <div class="image-item">
+      <img src="image/img_fjords.jpg" alt="Image 1">
+      <p>Add a description of the image here</p>
+    </div>
+    <div class="image-item">
+      <img src="image/img_forest.jpg" alt="Image 2">
+      <p>Add a description of the image here</p>
+    </div>
+    <div class="image-item">
+      <img src="image/img_lights.jpg" alt="Image 3">
+      <p>Add a description of the image here</p>
+    </div>
+    <div class="image-item">
+      <img src="image/img_mountains.jpg" alt="Image 4">
+      <p>Add a description of the image here</p>
+    </div>
+  </div>
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically.</p>
+</div>
+
+</html>
+</body>
+</html>
