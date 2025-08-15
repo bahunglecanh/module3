@@ -45,8 +45,9 @@
                 </div>
             </form>
             <div class="d-flex mt-2 mt-md-0">
-                <a class="btn btn-success" href="${pageContext.request.contextPath}/users?action=create">Thêm người dùng</a>
-                <a class="btn btn-outline-secondary ms-2" href="${pageContext.request.contextPath}/users?action=sort">Sắp xếp theo tên</a>
+                <a class="btn btn-success" href="${pageContext.request.contextPath}/users?action=create">Them nguoi dung</a>
+                <a class="btn btn-outline-secondary ms-2" href="${pageContext.request.contextPath}/users?action=sort">Sap xep theo ten</a>
+                <a class="btn btn-warning ms-2" href="${pageContext.request.contextPath}/users?action=transaction">Test Transaction</a>
             </div>
         </div>
 

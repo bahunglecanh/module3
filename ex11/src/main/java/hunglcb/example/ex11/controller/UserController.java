@@ -38,6 +38,9 @@ public class UserController extends HttpServlet {
             case "sort":
                 sortUser(request, response);
                 break;
+            case "transaction":
+                testTransaction(request, response);
+                break;
             default:
                 listUsers(request, response);
                 break;
@@ -118,5 +121,18 @@ public class UserController extends HttpServlet {
         List<User> list = service.sortUsersByName();
         request.setAttribute("listUser", list);
         request.getRequestDispatcher("/WEB-INF/views/user/user-list.jsp").forward(request, response);
+    }
+    
+    private void testTransaction(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // Tao 2 user de test transaction
+        User user1 = new User(0, "Transaction User 1", "trans1@example.com", "Transaction Country");
+        User user2 = new User(0, "Transaction User 2", "trans2@example.com", "Transaction Country");
+        
+        // Goi service de test transaction
+        service.addUserTransaction(user1, user2);
+        
+        // Chuyen huong ve trang danh sach
+        response.sendRedirect("users");
     }
 }

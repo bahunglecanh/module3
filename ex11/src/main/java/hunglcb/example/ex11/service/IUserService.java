@@ -12,4 +12,7 @@ public interface IUserService {
     void deleteUser(int id);
     List<User> searchUsersByCountry(String country);
     List<User> sortUsersByName();
+    
+    // Thêm phương thức mới để thực hành transaction
+    void addUserTransaction(User user1, User user2);
 }
