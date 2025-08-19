@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,6 +29,15 @@
     <div class="mb-3">
         <label class="form-label">Giá</label>
         <input class="form-control" type="number" name="price" step="0.01" min="0" required/>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Danh mục</label>
+        <select class="form-select" name="categoryId">
+            <option value="">Chọn danh mục</option>
+            <c:forEach var="category" items="${categories}">
+                <option value="${category.id}">${category.name}</option>
+            </c:forEach>
+        </select>
     </div>
     <div class="mb-3">
         <label class="form-label">Mô tả</label>

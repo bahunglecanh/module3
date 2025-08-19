@@ -1,4 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,10 +24,20 @@
         <dl class="row mt-3">
             <dt class="col-sm-3">ID</dt>
             <dd class="col-sm-9">${product.id}</dd>
-            <dt class="col-sm-3">Tên</dt>
-            <dd class="col-sm-9">${product.name}</dd>
+            <dt class="col-sm-3">Tên sản phẩm</dt>
+            <dd class="col-sm-9"><strong>${product.name}</strong></dd>
             <dt class="col-sm-3">Giá</dt>
-            <dd class="col-sm-9">${product.price}</dd>
+            <dd class="col-sm-9"><fmt:formatNumber value="${product.price}" type="currency" currencySymbol="₫" /></dd>
+            <dt class="col-sm-3">Danh mục</dt>
+            <dd class="col-sm-9">
+                <c:if test="${not empty product.category}">
+                    <span class="badge bg-secondary">${product.category.name}</span>
+                    <br><small class="text-muted">${product.category.description}</small>
+                </c:if>
+                <c:if test="${empty product.category}">
+                    <span class="text-muted">Chưa phân loại</span>
+                </c:if>
+            </dd>
             <dt class="col-sm-3">Mô tả</dt>
             <dd class="col-sm-9">${product.description}</dd>
             <dt class="col-sm-3">Nhà sản xuất</dt>

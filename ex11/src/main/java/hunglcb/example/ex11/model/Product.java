@@ -6,16 +6,23 @@ public class Product {
     private double price;
     private String description;
     private String manufacturer;
+    private int categoryId;
+    private Category category;
 
     public Product() {
     }
 
-    public Product(int id, String name, double price, String description, String manufacturer) {
+    public Product(int id, String name, double price, String description, String manufacturer, int categoryId) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.description = description;
         this.manufacturer = manufacturer;
+        this.categoryId = categoryId;
+    }
+
+    public Product(int id, String name, double price, String description, String manufacturer) {
+        this(id, name, price, description, manufacturer, 0);
     }
 
     public Product(String name, double price, String description, String manufacturer) {
@@ -62,5 +69,32 @@ public class Product {
         this.manufacturer = manufacturer;
     }
 
+    public int getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                ", manufacturer='" + manufacturer + '\'' +
+                ", categoryId=" + categoryId +
+                '}';
+    }
 }
 
